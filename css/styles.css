@@ -27,22 +27,53 @@
 
 */
 body {
-    background-color: aquamarine;
-}
-nav {
-    background-color: red;
+    background-color: grey;
 }
 
-ul {
+header {
+    width: 100%;
+}
+
+.navbar {
+    margin: 0 auto;
+    width: 500px;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
-ul li {
-    list-style: none;
-    margin: 0 1rem;
+header nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 1rem;
     font-size: 16px;
     font-weight: normal;
     color: hsl(273, 4%, 51%);
 }
+.view-plans{
+    border: 1px solid hsl(273, 4%, 51%);
+    padding: 0.5rem;
+}
+.view-plans:hover {
+    background-color: hsl(273, 4%, 51%);
+    color: white;
+    cursor: pointer;
+}
+
